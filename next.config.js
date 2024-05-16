@@ -1,7 +1,7 @@
 const { withContentlayer } = require("next-contentlayer");
 
 const basePath =
-  process.env.NEXT_PUBLIC_VERCEL_ENV === "production" ? "/fafa-runner" : "";
+  process.env.NEXT_PUBLIC_VERCEL_ENV === "production" ? "/fafarunner" : "";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
