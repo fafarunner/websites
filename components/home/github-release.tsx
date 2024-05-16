@@ -11,7 +11,7 @@ import {
 } from "@/components/shared/icons";
 import GitHubPkg from "@/components/home/github-pkg";
 import { platforms } from "@/constants";
-import { getLatestRelease } from "@/request";
+import { getReleases } from "@/request";
 import { useTranslation } from "@/i18n/client";
 import type { LngProps } from "@/types/i18next-lng";
 import type { Asset, Release } from "@/types/github";
@@ -24,15 +24,16 @@ export default function GithubRelease({ lng }: LngProps) {
   const [error, setError] = useState<any>(null);
 
   const assets = useMemo(() => {
-    if (data) {
-      return (
-        data.assets?.filter(
-          ({ name }) => !(name?.includes("x86_64") || name?.endsWith(".sig")),
-        ) || []
-      );
+    if (data.assets && data.assets.length) {
+      return data.assets;
     }
+
     return [];
-  }, [data]);
+  }, [data.assets]);
+
+  const tag_name = useMemo(() => {
+    return data.tag_name;
+  }, [data.tag_name]);
 
   const { ios, android, macos, windows, linux } = useMemo(() => {
     const packages: Record<SystemOS, Asset[]> = {
@@ -55,25 +56,31 @@ export default function GithubRelease({ lng }: LngProps) {
 
   const loadData = () => {
     setLoading(true);
-    getLatestRelease()
+    getReleases(1, 1)
       .then((res) => {
         setLoading(false);
         if (res?.code === 0) {
-          setData(res?.data || {});
+          setData(res?.data?.[0] || {});
         } else {
           setError(res?.msg);
         }
       })
       .catch((error) => {
+        console.error(error);
         setLoading(false);
         setError(error.message || error.toString());
-        console.error(error);
       });
   };
 
   useEffect(() => {
     loadData();
   }, []);
+
+  const disabled = useMemo(() => {
+    if (loading) return true;
+
+    return !!error;
+  }, [loading, error]);
 
   return (
     <>
@@ -135,24 +142,6 @@ export default function GithubRelease({ lng }: LngProps) {
                 <span className="sm:inline-block">Linux</span>
               </p>
             </GitHubPkg>
-            <Link
-              className="flex items-center justify-center space-x-2 rounded-full border border-gray-300 px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800 dark:text-white/80 max-md:mx-0"
-              href="https://play.google.com/store/apps/details?id=com.chenyifaer.fafarunner"
-            >
-              <GooglePlay className="h-7 w-7" />
-              <p>
-                <span className="sm:inline-block">Google Play</span>
-              </p>
-            </Link>
-            <Link
-              className="flex items-center justify-center space-x-2 rounded-full border border-gray-300 px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800 dark:text-white/80 max-md:mx-0"
-              href="https://apps.apple.com/us/app/id6446263696"
-            >
-              <AppStore className="h-7 w-7" />
-              <p>
-                <span className="sm:inline-block">App Store</span>
-              </p>
-            </Link>
           </div>
         </div>
       </div>

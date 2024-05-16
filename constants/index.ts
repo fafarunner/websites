@@ -11,21 +11,8 @@ export const domain =
 export const platforms: Record<SystemOS, string[]> = {
   ios: [".ipa"],
   android: [".apk", ".aab"],
-  macos: [
-    "aarch64.dmg",
-    "universal.dmg",
-    "x64.dmg",
-    "aarch64.app.tar.gz",
-    "universal.app.tar.gz",
-    "x64.app.tar.gz",
-  ],
-  windows: [
-    "arm64-setup.exe",
-    "x64-setup.exe",
-    "x64-setup.nsis.zip",
-    "x86-setup.exe",
-    "x86-setup.nsis.zip",
-  ],
-  linux: ["amd64.AppImage", "amd64.AppImage.tar.gz", "amd64.deb"],
+  macos: [".dmg", ".pkg", ".macos.zip"],
+  windows: [".exe", ".msix"],
+  linux: [".AppImage", ".deb", ".rpm", ".snap", ".linux.zip"],
 };
 export const pageSize: number = 10;
