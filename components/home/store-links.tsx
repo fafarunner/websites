@@ -117,7 +117,7 @@ export default function StoreLinks({ lng }: LngProps) {
             <>
               {t("latest")}:{" "}
               <Link
-                className="text-[#3e8fc8]"
+                className="text-red-400"
                 href={`https://github.com/fafarunner/fafarunner/releases/tag/${tag_name}`}
                 target="_blank"
               >
