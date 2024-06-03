@@ -48,8 +48,8 @@ importers:
         specifier: ^10.2.3
         version: 10.2.3(prop-types@15.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       framer-motion:
-        specifier: ^11.2.6
-        version: 11.2.6(@emotion/is-prop-valid@1.2.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ^11.2.10
+        version: 11.2.10(@emotion/is-prop-valid@1.2.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       http-status:
         specifier: ^1.7.4
         version: 1.7.4
@@ -69,8 +69,8 @@ importers:
         specifier: ^0.9.35
         version: 0.9.35(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       lucide-react:
-        specifier: ^0.379.0
-        version: 0.379.0(react@18.3.1)
+        specifier: ^0.383.0
+        version: 0.383.0(react@18.3.1)
       ms:
         specifier: ^2.1.3
         version: 2.1.3
@@ -184,11 +184,11 @@ importers:
         specifier: ^8.4.38
         version: 8.4.38
       prettier:
-        specifier: ^3.2.5
-        version: 3.2.5
+        specifier: ^3.3.0
+        version: 3.3.0
       prettier-plugin-tailwindcss:
-        specifier: ^0.5.14
-        version: 0.5.14(prettier@3.2.5)
+        specifier: ^0.6.1
+        version: 0.6.1(prettier@3.3.0)
       tailwindcss:
         specifier: ^3.4.3
         version: 3.4.3
@@ -4930,8 +4930,8 @@ packages:
   fraction.js@4.3.7:
     resolution: {integrity: sha512-ZsDfxO51wGAXREY55a7la9LScWpwv9RxIrYABrlvOFBlH/ShPnrtsXeuUIfXKKOVicNxQ+o8JTbJvjS4M89yew==}
 
-  framer-motion@11.2.6:
-    resolution: {integrity: sha512-XUrjjBt57e5YoHQtjwc3eNchFBuHvIgN/cS8SC4oIaAn2J/0+bLanUxXizidJKZVeHJam/JrmMnPRjYMglVn5g==}
+  framer-motion@11.2.10:
+    resolution: {integrity: sha512-/gr3PLZUVFCc86a9MqCUboVrALscrdluzTb3yew+2/qKBU8CX6nzs918/SRBRCqaPbx0TZP10CB6yFgK2C5cYQ==}
     peerDependencies:
       '@emotion/is-prop-valid': '*'
       react: ^18.0.0
@@ -6086,8 +6086,8 @@ packages:
     peerDependencies:
       react: ^16.5.1 || ^17.0.0 || ^18.0.0
 
-  lucide-react@0.379.0:
-    resolution: {integrity: sha512-KcdeVPqmhRldldAAgptb8FjIunM2x2Zy26ZBh1RsEUcdLIvsEmbcw7KpzFYUy5BbpGeWhPu9Z9J5YXfStiXwhg==}
+  lucide-react@0.383.0:
+    resolution: {integrity: sha512-13xlG0CQCJtzjSQYwwJ3WRqMHtRj3EXmLlorrARt7y+IHnxUCp3XyFNL1DfaGySWxHObDvnu1u1dV+0VMKHUSg==}
     peerDependencies:
       react: ^16.5.1 || ^17.0.0 || ^18.0.0
 
@@ -7265,8 +7265,8 @@ packages:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
 
-  prettier-plugin-tailwindcss@0.5.14:
-    resolution: {integrity: sha512-Puaz+wPUAhFp8Lo9HuciYKM2Y2XExESjeT+9NQoVFXZsPPnc9VYss2SpxdQ6vbatmt8/4+SN0oe0I1cPDABg9Q==}
+  prettier-plugin-tailwindcss@0.6.1:
+    resolution: {integrity: sha512-AnbeYZu0WGj+QgKciUgdMnRxrqcxltleZPgdwfA5104BHM3siBLONN/HLW1yS2HvzSNkzpQ/JAj+LN0jcJO+0w==}
     engines: {node: '>=14.21.3'}
     peerDependencies:
       '@ianvs/prettier-plugin-sort-imports': '*'
@@ -7317,8 +7317,8 @@ packages:
       prettier-plugin-svelte:
         optional: true
 
-  prettier@3.2.5:
-    resolution: {integrity: sha512-3/GWa9aOC0YeD7LUfvOG2NiDyhOWRvt1k+rcKhOuYnMY24iiCphgneUfJDyFXd6rZCAnuLBv6UeAULtrhT/F4A==}
+  prettier@3.3.0:
+    resolution: {integrity: sha512-J9odKxERhCQ10OC2yb93583f6UnYutOeiV5i0zEDS7UGTdUt0u+y8erxl3lBKvwo/JHyyoEdXjwp4dke9oyZ/g==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -14017,16 +14017,6 @@ snapshots:
       - eslint-import-resolver-webpack
       - supports-color
 
-  eslint-module-utils@2.8.0(@typescript-eslint/parser@5.62.0(eslint@8.57.0)(typescript@5.4.5))(eslint-import-resolver-node@0.3.9)(eslint@8.57.0):
-    dependencies:
-      debug: 3.2.7
-    optionalDependencies:
-      '@typescript-eslint/parser': 5.62.0(eslint@8.57.0)(typescript@5.4.5)
-      eslint: 8.57.0
-      eslint-import-resolver-node: 0.3.9
-    transitivePeerDependencies:
-      - supports-color
-
   eslint-module-utils@2.8.0(@typescript-eslint/parser@6.8.0(eslint@8.57.0)(typescript@5.4.5))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@6.8.0(eslint@8.57.0)(typescript@5.4.5))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.0)(eslint@8.57.0))(eslint@8.57.0):
     dependencies:
       debug: 3.2.7
@@ -14056,7 +14046,7 @@ snapshots:
       doctrine: 2.1.0
       eslint: 8.57.0
       eslint-import-resolver-node: 0.3.9
-      eslint-module-utils: 2.8.0(@typescript-eslint/parser@5.62.0(eslint@8.57.0)(typescript@5.4.5))(eslint-import-resolver-node@0.3.9)(eslint@8.57.0)
+      eslint-module-utils: 2.8.0(@typescript-eslint/parser@6.8.0(eslint@8.57.0)(typescript@5.4.5))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@6.8.0(eslint@8.57.0)(typescript@5.4.5))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.0)(eslint@8.57.0))(eslint@8.57.0)
       hasown: 2.0.0
       is-core-module: 2.13.1
       is-glob: 4.0.3
@@ -14536,7 +14526,7 @@ snapshots:
 
   fraction.js@4.3.7: {}
 
-  framer-motion@11.2.6(@emotion/is-prop-valid@1.2.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  framer-motion@11.2.10(@emotion/is-prop-valid@1.2.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       tslib: 2.6.2
     optionalDependencies:
@@ -15988,7 +15978,7 @@ snapshots:
     dependencies:
       react: 18.3.1
 
-  lucide-react@0.379.0(react@18.3.1):
+  lucide-react@0.383.0(react@18.3.1):
     dependencies:
       react: 18.3.1
 
@@ -17545,11 +17535,11 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
-  prettier-plugin-tailwindcss@0.5.14(prettier@3.2.5):
+  prettier-plugin-tailwindcss@0.6.1(prettier@3.3.0):
     dependencies:
-      prettier: 3.2.5
+      prettier: 3.3.0
 
-  prettier@3.2.5: {}
+  prettier@3.3.0: {}
 
   pretty-bytes@5.6.0: {}
 
