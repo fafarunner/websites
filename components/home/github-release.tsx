@@ -30,10 +30,6 @@ export default function GithubRelease({ lng }: LngProps) {
     return [];
   }, [data.assets]);
 
-  const tag_name = useMemo(() => {
-    return data.tag_name;
-  }, [data.tag_name]);
-
   const { ios, android, macos, windows, linux } = useMemo(() => {
     const packages: Record<SystemOS, Asset[]> = {
       ios: [],
@@ -74,12 +70,6 @@ export default function GithubRelease({ lng }: LngProps) {
   useEffect(() => {
     loadData();
   }, []);
-
-  const disabled = useMemo(() => {
-    if (loading) return true;
-
-    return !!error;
-  }, [loading, error]);
 
   return (
     <>
