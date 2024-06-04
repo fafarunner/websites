@@ -3,10 +3,9 @@ import Link from "next/link";
 import Balancer from "react-wrap-balancer";
 import {
   Android,
-  AppStore,
-  GooglePlay,
   Microsoft,
-  Apple,
+  IOS,
+  MacOS,
   Linux,
 } from "@/components/shared/icons";
 import GitHubPkg from "@/components/home/github-pkg";
@@ -104,7 +103,7 @@ export default function GithubRelease({ lng }: LngProps) {
               assets={ios}
               wrapperClassName="border border-gray-300 hover:border-gray-800 shadow-md"
             >
-              <AppStore className="h-7 w-7" />
+              <IOS className="h-7 w-7" />
               <p>
                 <span className="sm:inline-block">iOS</span>
               </p>
@@ -115,7 +114,7 @@ export default function GithubRelease({ lng }: LngProps) {
               assets={macos}
               wrapperClassName="border border-gray-300 hover:border-gray-800 shadow-md"
             >
-              <Apple className="h-7 w-7" />
+              <MacOS className="h-7 w-7" />
               <p>
                 <span className="sm:inline-block">macOS</span>
               </p>

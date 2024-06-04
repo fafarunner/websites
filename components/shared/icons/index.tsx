@@ -14,3 +14,5 @@ export { default as Test } from "./test";
 export { default as Twitter } from "./twitter";
 export { default as Loading } from "./loading";
 export { default as MicrosoftStore } from "./microsoft-store";
+export { default as MacOS } from "./macos";
+export { default as IOS } from "./ios";
