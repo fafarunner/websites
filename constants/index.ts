@@ -1,4 +1,4 @@
-import { SystemOS } from "@/types/common";
+import { ExtType, SystemOS } from "@/types/common";
 
 export const cacheLngKey: string = "__fafa_runner_lng__";
 export const cacheThemeKey: string = "__fafa_runner_theme__";
@@ -8,11 +8,24 @@ export const domain =
   process.env.NODE_ENV === "production"
     ? `https://chenyifaer.com${basePath}`
     : `http://localhost:3000${basePath}`;
-export const platforms: Record<SystemOS, string[]> = {
+export const platforms: Record<SystemOS, ExtType[]> = {
   ios: [".ipa"],
   android: [".apk", ".aab"],
-  macos: [".dmg", ".pkg", ".macos.zip"],
-  windows: [".exe", ".msix", ".windows.zip"],
-  linux: [".AppImage", ".deb", ".rpm", ".snap", ".linux.zip"],
+  macos: [
+    ".dmg",
+    ".pkg",
+    { name: ".zip", include: true },
+    { name: ".tar.gz", include: true },
+  ],
+  windows: [".exe", ".msix", { name: ".zip", include: true }],
+  linux: [
+    ".AppImage",
+    ".deb",
+    ".rpm",
+    ".snap",
+    ".flatpak",
+    { name: ".zip", include: true },
+    { name: ".tar.gz", include: true },
+  ],
 };
 export const pageSize: number = 10;
