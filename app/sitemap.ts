@@ -8,6 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     .sort((a, b) => {
       return new Date(a.publishedAt) > new Date(b.publishedAt) ? -1 : 1;
     })
+    .filter((post) => post.slug.startsWith("en/"))
     .map((post) => ({
       url: `${domain}/${post.slug}`,
       lastModified: new Date(),
@@ -17,12 +18,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   sitemaps = sitemaps.concat(
     sitemapUrls.flatMap((url: string) => {
-      return languages.map((lng: string) => ({
-        url: `${domain}/${lng}/${url}`,
-        lastModified: new Date(),
-        changeFrequency: "weekly",
-        priority: 1,
-      }));
+      return languages
+        .filter((language) => language === "en")
+        .map((lng: string) => ({
+          url: `${domain}/${lng}/${url}`,
+          lastModified: new Date(),
+          changeFrequency: "weekly",
+          priority: 1,
+        }));
     }),
   );
 
