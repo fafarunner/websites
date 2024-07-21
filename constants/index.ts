@@ -4,10 +4,10 @@ export const cacheLngKey: string = "__fafa_runner_lng__";
 export const cacheThemeKey: string = "__fafa_runner_theme__";
 
 export const basePath =
-  process.env.NEXT_PUBLIC_VERCEL_ENV === "production" ? "/fafarunner" : "";
+  process.env.NEXT_PUBLIC_VERCEL_ENV === "production" ? "" : "";
 export const domain =
   process.env.NODE_ENV === "production"
-    ? `https://chenyifaer.com${basePath}`
+    ? `https://fafarunner.com${basePath}`
     : `http://localhost:3000${basePath}`;
 
 export const platforms: SystemOSKeys[] = [

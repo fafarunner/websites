@@ -37,7 +37,7 @@ export async function generateMetadata({
     description: `${
       params.lng === "en" ? "FaFa Runner" : "发发跑酷"
     } - 童话镇里一枝花, 人美歌甜陈一发.`,
-    metadataBase: new URL("https://chenyifaer.com"),
+    metadataBase: new URL("https://fafarunner.com"),
     icons: {
       icon: `${basePath}/logo.jpg`,
     },

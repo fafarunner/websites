@@ -42,7 +42,7 @@ export default function Footer(props: LngProps) {
       </p>
       <span className="mt-2 flex flex-wrap items-center justify-center text-sm text-gray-500 dark:text-gray-400 sm:text-center">
         © {`2023${fullYear === 2023 ? "" : `-${fullYear}`}`}&nbsp;
-        <a href="https://www.chenyifaer.com" className="hover:underline">
+        <a href="https://www.fafarunner.com" className="hover:underline">
           {th("title")}
         </a>
         . {t("copyright")}&nbsp;
