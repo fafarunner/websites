@@ -75,26 +75,6 @@ export default function Header(props: LngProps) {
               </div>
             </li>
             <li className="h-8 w-8 sm:h-9 sm:w-9">
-              <div className="relative inline-block text-left">
-                <TooltipProvider>
-                  <Tooltip>
-                    <TooltipTrigger>
-                      <Link
-                        href="https://fafarunner.com"
-                        target="_blank"
-                        className="flex h-8 w-8 items-center justify-center overflow-hidden rounded-full transition-all duration-75 focus:outline-none active:scale-95 sm:h-9 sm:w-9"
-                      >
-                        <ExternalLink className="h-5 w-5" />
-                      </Link>
-                    </TooltipTrigger>
-                    <TooltipContent>
-                      <p>{t("menus.goto-runner")}</p>
-                    </TooltipContent>
-                  </Tooltip>
-                </TooltipProvider>
-              </div>
-            </li>
-            <li className="h-8 w-8 sm:h-9 sm:w-9">
               <LngDropdown lng={props.lng} />
             </li>
             <li className="h-8 w-8 sm:h-9 sm:w-9">
