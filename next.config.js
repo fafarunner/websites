@@ -8,6 +8,15 @@ const nextConfig = {
   trailingSlash: true,
   reactStrictMode: true,
   swcMinify: true,
+  async redirects() {
+    return [
+      {
+        source: "/issues",
+        destination: "https://github.com/fafarunner/fafarunner/issues",
+        permanent: false,
+      },
+    ];
+  },
   images: {
     dangerouslyAllowSVG: true,
     remotePatterns: [
