@@ -1,9 +1,14 @@
 {
+  "slogan": "一款使用Flutter和Flame开发的休闲游戏。",
+  "get": "获取FaFa Runner",
+  "comments": "在全球范围内被提及",
   "latest": "最新版本",
   "beta": "测试版",
   "store": "应用商店",
   "more-versions": "更多版本",
   "join": "参与内测",
   "play": "开始玩",
-  "load-more": "加载更多"
+  "load-more": "加载更多",
+  "features": "特点",
+  "download": "下载"
 }

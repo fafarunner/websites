@@ -1,9 +1,14 @@
 {
+  "slogan": "A game developed using flame and bonfire.",
+  "get": "Get FaFa Runner",
+  "comments": "Mentioned across the globe",
   "latest": "Latest Version",
   "beta": "Beta",
   "store": "Store",
   "more-versions": "More Versions",
   "join": "JOIN INSIDER",
   "play": "PLAY",
-  "load-more": "Load More"
+  "load-more": "Load More",
+  "features": "Features",
+  "download": "Download"
 }

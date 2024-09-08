@@ -14,8 +14,7 @@ import LngDropdown from "./lng-dropdown";
 import ThemeDropdown from "./theme-dropdown";
 import { useTranslation } from "@/i18n/client";
 import { basePath } from "@/constants";
-// import { Github } from "@/components/shared/icons";
-import { LngProps } from "@/types/i18next-lng";
+import type { LngProps } from "@/types/i18next-lng";
 
 export default function Header(props: LngProps) {
   const { t } = useTranslation(props.lng, "header");
@@ -68,7 +67,7 @@ export default function Header(props: LngProps) {
                       </Link>
                     </TooltipTrigger>
                     <TooltipContent>
-                      <p>{t("menus.goto-runner")}</p>
+                      <p>{t("menus.goto")}</p>
                     </TooltipContent>
                   </Tooltip>
                 </TooltipProvider>
