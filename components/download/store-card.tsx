@@ -12,24 +12,25 @@ export default function StoreCard({
 
   const storeLinks = useMemo(() => {
     const links: Record<SystemOS, React.ReactNode> = {
-      ios: (
-        <>
-          <Link
-            className="mt-2"
-            target="_blank"
-            href="https://apps.apple.com/us/app/id6446263696"
-          >
-            <img
-              width="220"
-              alt="Get it on App Store"
-              src="https://raw.githubusercontent.com/fafarunner/fafarunner/main/docs/assets/Download-on-the-App-Store.svg"
-            />
-          </Link>
-        </>
-      ),
+      ios: null,
+      // ios: (
+      //   <>
+      //     <Link
+      //       className="mt-2"
+      //       target="_blank"
+      //       href="https://apps.apple.com/us/app/id6446263696"
+      //     >
+      //       <img
+      //         width="220"
+      //         alt="Get it on App Store"
+      //         src="https://raw.githubusercontent.com/fafarunner/fafarunner/main/docs/assets/Download-on-the-App-Store.svg"
+      //       />
+      //     </Link>
+      //   </>
+      // ),
       android: (
         <>
-          <span className="mt-2 text-gray-600 dark:text-white/80">
+          {/* <span className="mt-2 text-gray-600 dark:text-white/80">
             Google Play
           </span>
           <div className="mb-2 mt-2 flex flex-col px-2">
@@ -43,9 +44,9 @@ export default function StoreCard({
                 src="https://raw.githubusercontent.com/fafarunner/fafarunner/main/docs/assets/Download-on-the-Google-Play.png"
               />
             </Link>
-          </div>
-          <span className="mt-4 text-gray-600 dark:text-white/80">
-            F-Droid (TODO)
+          </div> */}
+          <span className="mt-2 text-gray-600 dark:text-white/80">
+            F-Droid (In progress)
           </span>
           <div className="mb-2 mt-2 flex flex-col px-2">
             <Link
@@ -59,7 +60,7 @@ export default function StoreCard({
               />
             </Link>
           </div>
-          <span className="mt-4 text-gray-600 dark:text-white/80">
+          {/* <span className="mt-4 text-gray-600 dark:text-white/80">
             Amazon (TODO)
           </span>
           <div className="mb-2 mt-2 flex flex-col px-2">
@@ -70,39 +71,41 @@ export default function StoreCard({
                 src="https://raw.githubusercontent.com/fafarunner/fafarunner/main/docs/assets/Download-on-the-Amazon-App-Store.png"
               />
             </Link>
-          </div>
+          </div> */}
         </>
       ),
-      macos: (
-        <>
-          <Link
-            className="mt-2"
-            target="_blank"
-            href="https://apps.apple.com/us/app/id6448848303?mt=12"
-          >
-            <img
-              width="220"
-              alt="Get it on Mac App Store"
-              src="https://raw.githubusercontent.com/fafarunner/fafarunner/main/docs/assets/Download-on-the-Mac-App-Store.svg"
-            />
-          </Link>
-        </>
-      ),
-      windows: (
-        <>
-          <Link
-            className="mt-2"
-            target="_blank"
-            href="https://apps.microsoft.com/detail/9PDN5V0ZMF20?mode=full"
-          >
-            <img
-              width="220"
-              alt="Get it on Windows Store"
-              src="https://get.microsoft.com/images/en-us%20dark.svg"
-            />
-          </Link>
-        </>
-      ),
+      macos: null,
+      // macos: (
+      //   <>
+      //     <Link
+      //       className="mt-2"
+      //       target="_blank"
+      //       href="https://apps.apple.com/us/app/id6448848303?mt=12"
+      //     >
+      //       <img
+      //         width="220"
+      //         alt="Get it on Mac App Store"
+      //         src="https://raw.githubusercontent.com/fafarunner/fafarunner/main/docs/assets/Download-on-the-Mac-App-Store.svg"
+      //       />
+      //     </Link>
+      //   </>
+      // ),
+      windows: null,
+      // windows: (
+      //   <>
+      //     <Link
+      //       className="mt-2"
+      //       target="_blank"
+      //       href="https://apps.microsoft.com/detail/9PDN5V0ZMF20?mode=full"
+      //     >
+      //       <img
+      //         width="220"
+      //         alt="Get it on Windows Store"
+      //         src="https://get.microsoft.com/images/en-us%20dark.svg"
+      //       />
+      //     </Link>
+      //   </>
+      // ),
       linux: (
         <>
           <span className="mt-2 text-gray-600 dark:text-white/80">
@@ -138,7 +141,7 @@ export default function StoreCard({
   }, []);
 
   return storeLinks[platform] ? (
-    <div className="flex w-full max-w-screen-xl animate-fade-up flex-col rounded-xl border border-gray-200 p-4 hover:shadow-md dark:border-gray-700 dark:hover:shadow-gray-700">
+    <div className="flex min-h-64 w-full max-w-screen-xl animate-fade-up flex-col rounded-xl border border-gray-200 p-4 hover:shadow-md dark:border-gray-700 dark:hover:shadow-gray-700">
       <span className="text-xl font-bold">{t("app-store")}</span>
       <span className="text-base text-gray-600 dark:text-white/80">
         {t("app-store-description")}
