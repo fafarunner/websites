@@ -59,11 +59,9 @@ export default function StoreCard({
               />
             </Link>
           </div>
-          <span className="mt-4 text-gray-600 dark:text-white/80">
-            Amazon (TODO)
-          </span>
+          <span className="mt-4 text-gray-600 dark:text-white/80">Amazon</span>
           <div className="mb-2 mt-2 flex flex-col px-2">
-            <Link target="_blank" href="https://www.amazon.com/dp/XXXXXXXXXX">
+            <Link target="_blank" href="https://www.amazon.com/dp/B0DHZ8N2BJ">
               <img
                 width="220"
                 alt="Get it on Amazon App Store"
