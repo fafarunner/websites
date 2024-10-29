@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@hookform/resolvers':
-        specifier: ^3.9.0
-        version: 3.9.0(react-hook-form@7.53.1(react@18.3.1))
+        specifier: ^3.9.1
+        version: 3.9.1(react-hook-form@7.53.1(react@18.3.1))
       '@octokit/rest':
         specifier: ^21.0.2
         version: 21.0.2
@@ -69,8 +69,8 @@ importers:
         specifier: ^0.9.35
         version: 0.9.35(@types/react-dom@18.3.1)(@types/react@18.3.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       lucide-react:
-        specifier: ^0.453.0
-        version: 0.453.0(react@18.3.1)
+        specifier: ^0.454.0
+        version: 0.454.0(react@18.3.1)
       ms:
         specifier: ^2.1.3
         version: 2.1.3
@@ -143,7 +143,7 @@ importers:
     devDependencies:
       '@commitlint/cli':
         specifier: ^19.5.0
-        version: 19.5.0(@types/node@18.19.59)(typescript@5.6.3)
+        version: 19.5.0(@types/node@18.19.60)(typescript@5.6.3)
       '@commitlint/config-conventional':
         specifier: ^19.5.0
         version: 19.5.0
@@ -160,8 +160,8 @@ importers:
         specifier: ^0.7.34
         version: 0.7.34
       '@types/node':
-        specifier: ^18.19.59
-        version: 18.19.59
+        specifier: ^18.19.60
+        version: 18.19.60
       '@types/react':
         specifier: ^18.3.12
         version: 18.3.12
@@ -1388,8 +1388,8 @@ packages:
   '@hapi/topo@5.1.0':
     resolution: {integrity: sha512-foQZKJig7Ob0BMAYBfcJk8d77QtOe7Wo4ox7ff1lQYoNNAb6jwcY1ncdoy2e9wQZzvNy7ODZCYJkK8kzmcAnAg==}
 
-  '@hookform/resolvers@3.9.0':
-    resolution: {integrity: sha512-bU0Gr4EepJ/EQsH/IwEzYLsT/PEj5C0ynLQ4m+GSHS+xKH4TfSelhluTgOaoc4kA5s7eCsQbM4wvZLzELmWzUg==}
+  '@hookform/resolvers@3.9.1':
+    resolution: {integrity: sha512-ud2HqmGBM0P0IABqoskKWI6PEf6ZDDBZkFqe2Vnl+mTHCEHzr3ISjjZyCwTjC/qpL25JC9aIDkloQejvMeq0ug==}
     peerDependencies:
       react-hook-form: ^7.0.0
 
@@ -3319,8 +3319,8 @@ packages:
   '@types/ms@0.7.34':
     resolution: {integrity: sha512-nG96G3Wp6acyAgJqGasjODb+acrI7KltPiRxzHPXnP3NgI28bpQDRv53olbqGXbfcgF5aiiHmO3xpwEpS5Ld9g==}
 
-  '@types/node@18.19.59':
-    resolution: {integrity: sha512-vizm2EqwV/7Zay+A6J3tGl9Lhr7CjZe2HmWS988sefiEmsyP9CeXEleho6i4hJk/8UtZAo0bWN4QPZZr83RxvQ==}
+  '@types/node@18.19.60':
+    resolution: {integrity: sha512-cYRj7igVqgxhlHFdBHHpU2SNw3+dN2x0VTZJtLYk6y/ieuGN4XiBgtDjYVktM/yk2y/8pKMileNc6IoEzEJnUw==}
 
   '@types/parse-json@4.0.1':
     resolution: {integrity: sha512-3YmXzzPAdOTVljVMkTMBdBEvlOLg2cDQaDhnnhT3nT9uDbnJzjWhKlzb+desT12Y7tGqaN6d+AbozcKzyL36Ng==}
@@ -6404,8 +6404,8 @@ packages:
     peerDependencies:
       react: ^16.5.1 || ^17.0.0 || ^18.0.0
 
-  lucide-react@0.453.0:
-    resolution: {integrity: sha512-kL+RGZCcJi9BvJtzg2kshO192Ddy9hv3ij+cPrVPWSRzgCWCVazoQJxOjAwgK53NomL07HB7GPHW120FimjNhQ==}
+  lucide-react@0.454.0:
+    resolution: {integrity: sha512-hw7zMDwykCLnEzgncEEjHeA6+45aeEzRYuKHuyRSOPkhko+J3ySGjGIzu+mmMfDFG1vazHepMaYFYHbTFAZAAQ==}
     peerDependencies:
       react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0-rc
 
@@ -10100,11 +10100,11 @@ snapshots:
 
   '@bcoe/v8-coverage@0.2.3': {}
 
-  '@commitlint/cli@19.5.0(@types/node@18.19.59)(typescript@5.6.3)':
+  '@commitlint/cli@19.5.0(@types/node@18.19.60)(typescript@5.6.3)':
     dependencies:
       '@commitlint/format': 19.5.0
       '@commitlint/lint': 19.5.0
-      '@commitlint/load': 19.5.0(@types/node@18.19.59)(typescript@5.6.3)
+      '@commitlint/load': 19.5.0(@types/node@18.19.60)(typescript@5.6.3)
       '@commitlint/read': 19.5.0
       '@commitlint/types': 19.5.0
       tinyexec: 0.3.0
@@ -10151,7 +10151,7 @@ snapshots:
       '@commitlint/rules': 19.5.0
       '@commitlint/types': 19.5.0
 
-  '@commitlint/load@19.5.0(@types/node@18.19.59)(typescript@5.6.3)':
+  '@commitlint/load@19.5.0(@types/node@18.19.60)(typescript@5.6.3)':
     dependencies:
       '@commitlint/config-validator': 19.5.0
       '@commitlint/execute-rule': 19.5.0
@@ -10159,7 +10159,7 @@ snapshots:
       '@commitlint/types': 19.5.0
       chalk: 5.3.0
       cosmiconfig: 9.0.0(typescript@5.6.3)
-      cosmiconfig-typescript-loader: 5.0.0(@types/node@18.19.59)(cosmiconfig@9.0.0(typescript@5.6.3))(typescript@5.6.3)
+      cosmiconfig-typescript-loader: 5.0.0(@types/node@18.19.60)(cosmiconfig@9.0.0(typescript@5.6.3))(typescript@5.6.3)
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
@@ -10634,7 +10634,7 @@ snapshots:
   '@grpc/grpc-js@1.9.7':
     dependencies:
       '@grpc/proto-loader': 0.7.10
-      '@types/node': 18.19.59
+      '@types/node': 18.19.60
 
   '@grpc/proto-loader@0.7.10':
     dependencies:
@@ -10649,7 +10649,7 @@ snapshots:
     dependencies:
       '@hapi/hoek': 9.3.0
 
-  '@hookform/resolvers@3.9.0(react-hook-form@7.53.1(react@18.3.1))':
+  '@hookform/resolvers@3.9.1(react-hook-form@7.53.1(react@18.3.1))':
     dependencies:
       react-hook-form: 7.53.1(react@18.3.1)
 
@@ -10762,7 +10762,7 @@ snapshots:
   '@jest/console@27.5.1':
     dependencies:
       '@jest/types': 27.5.1
-      '@types/node': 18.19.59
+      '@types/node': 18.19.60
       chalk: 4.1.2
       jest-message-util: 27.5.1
       jest-util: 27.5.1
@@ -10771,7 +10771,7 @@ snapshots:
   '@jest/console@28.1.3':
     dependencies:
       '@jest/types': 28.1.3
-      '@types/node': 18.19.59
+      '@types/node': 18.19.60
       chalk: 4.1.2
       jest-message-util: 28.1.3
       jest-util: 28.1.3
@@ -10784,7 +10784,7 @@ snapshots:
       '@jest/test-result': 27.5.1
       '@jest/transform': 27.5.1
       '@jest/types': 27.5.1
-      '@types/node': 18.19.59
+      '@types/node': 18.19.60
       ansi-escapes: 4.3.2
       chalk: 4.1.2
       emittery: 0.8.1
@@ -10818,14 +10818,14 @@ snapshots:
     dependencies:
       '@jest/fake-timers': 27.5.1
       '@jest/types': 27.5.1
-      '@types/node': 18.19.59
+      '@types/node': 18.19.60
       jest-mock: 27.5.1
 
   '@jest/fake-timers@27.5.1':
     dependencies:
       '@jest/types': 27.5.1
       '@sinonjs/fake-timers': 8.1.0
-      '@types/node': 18.19.59
+      '@types/node': 18.19.60
       jest-message-util: 27.5.1
       jest-mock: 27.5.1
       jest-util: 27.5.1
@@ -10843,7 +10843,7 @@ snapshots:
       '@jest/test-result': 27.5.1
       '@jest/transform': 27.5.1
       '@jest/types': 27.5.1
-      '@types/node': 18.19.59
+      '@types/node': 18.19.60
       chalk: 4.1.2
       collect-v8-coverage: 1.0.2
       exit: 0.1.2
@@ -10923,7 +10923,7 @@ snapshots:
     dependencies:
       '@types/istanbul-lib-coverage': 2.0.5
       '@types/istanbul-reports': 3.0.3
-      '@types/node': 18.19.59
+      '@types/node': 18.19.60
       '@types/yargs': 16.0.7
       chalk: 4.1.2
 
@@ -10932,7 +10932,7 @@ snapshots:
       '@jest/schemas': 28.1.3
       '@types/istanbul-lib-coverage': 2.0.5
       '@types/istanbul-reports': 3.0.3
-      '@types/node': 18.19.59
+      '@types/node': 18.19.60
       '@types/yargs': 17.0.29
       chalk: 4.1.2
 
@@ -12721,24 +12721,24 @@ snapshots:
   '@types/body-parser@1.19.4':
     dependencies:
       '@types/connect': 3.4.37
-      '@types/node': 18.19.59
+      '@types/node': 18.19.60
 
   '@types/bonjour@3.5.12':
     dependencies:
-      '@types/node': 18.19.59
+      '@types/node': 18.19.60
 
   '@types/connect-history-api-fallback@1.5.2':
     dependencies:
       '@types/express-serve-static-core': 4.17.39
-      '@types/node': 18.19.59
+      '@types/node': 18.19.60
 
   '@types/connect@3.4.37':
     dependencies:
-      '@types/node': 18.19.59
+      '@types/node': 18.19.60
 
   '@types/conventional-commits-parser@5.0.0':
     dependencies:
-      '@types/node': 18.19.59
+      '@types/node': 18.19.60
 
   '@types/d3-array@3.2.1': {}
 
@@ -12788,7 +12788,7 @@ snapshots:
 
   '@types/express-serve-static-core@4.17.39':
     dependencies:
-      '@types/node': 18.19.59
+      '@types/node': 18.19.60
       '@types/qs': 6.9.9
       '@types/range-parser': 1.2.6
       '@types/send': 0.17.3
@@ -12802,7 +12802,7 @@ snapshots:
 
   '@types/graceful-fs@4.1.8':
     dependencies:
-      '@types/node': 18.19.59
+      '@types/node': 18.19.60
 
   '@types/hast@2.3.10':
     dependencies:
@@ -12818,7 +12818,7 @@ snapshots:
 
   '@types/http-proxy@1.17.13':
     dependencies:
-      '@types/node': 18.19.59
+      '@types/node': 18.19.60
 
   '@types/istanbul-lib-coverage@2.0.5': {}
 
@@ -12846,7 +12846,7 @@ snapshots:
 
   '@types/ms@0.7.34': {}
 
-  '@types/node@18.19.59':
+  '@types/node@18.19.60':
     dependencies:
       undici-types: 5.26.5
 
@@ -12873,7 +12873,7 @@ snapshots:
 
   '@types/resolve@1.17.1':
     dependencies:
-      '@types/node': 18.19.59
+      '@types/node': 18.19.60
 
   '@types/resolve@1.20.4': {}
 
@@ -12884,7 +12884,7 @@ snapshots:
   '@types/send@0.17.3':
     dependencies:
       '@types/mime': 1.3.4
-      '@types/node': 18.19.59
+      '@types/node': 18.19.60
 
   '@types/serve-index@1.9.3':
     dependencies:
@@ -12894,11 +12894,11 @@ snapshots:
     dependencies:
       '@types/http-errors': 2.0.3
       '@types/mime': 3.0.3
-      '@types/node': 18.19.59
+      '@types/node': 18.19.60
 
   '@types/sockjs@0.3.35':
     dependencies:
-      '@types/node': 18.19.59
+      '@types/node': 18.19.60
 
   '@types/stack-utils@2.0.2': {}
 
@@ -12912,7 +12912,7 @@ snapshots:
 
   '@types/ws@8.5.8':
     dependencies:
-      '@types/node': 18.19.59
+      '@types/node': 18.19.60
 
   '@types/yargs-parser@21.0.2': {}
 
@@ -13945,9 +13945,9 @@ snapshots:
 
   core-util-is@1.0.3: {}
 
-  cosmiconfig-typescript-loader@5.0.0(@types/node@18.19.59)(cosmiconfig@9.0.0(typescript@5.6.3))(typescript@5.6.3):
+  cosmiconfig-typescript-loader@5.0.0(@types/node@18.19.60)(cosmiconfig@9.0.0(typescript@5.6.3))(typescript@5.6.3):
     dependencies:
-      '@types/node': 18.19.59
+      '@types/node': 18.19.60
       cosmiconfig: 9.0.0(typescript@5.6.3)
       jiti: 1.21.0
       typescript: 5.6.3
@@ -15896,7 +15896,7 @@ snapshots:
       '@jest/environment': 27.5.1
       '@jest/test-result': 27.5.1
       '@jest/types': 27.5.1
-      '@types/node': 18.19.59
+      '@types/node': 18.19.60
       chalk: 4.1.2
       co: 4.6.0
       dedent: 0.7.0
@@ -15992,7 +15992,7 @@ snapshots:
       '@jest/environment': 27.5.1
       '@jest/fake-timers': 27.5.1
       '@jest/types': 27.5.1
-      '@types/node': 18.19.59
+      '@types/node': 18.19.60
       jest-mock: 27.5.1
       jest-util: 27.5.1
       jsdom: 16.7.0
@@ -16007,7 +16007,7 @@ snapshots:
       '@jest/environment': 27.5.1
       '@jest/fake-timers': 27.5.1
       '@jest/types': 27.5.1
-      '@types/node': 18.19.59
+      '@types/node': 18.19.60
       jest-mock: 27.5.1
       jest-util: 27.5.1
 
@@ -16017,7 +16017,7 @@ snapshots:
     dependencies:
       '@jest/types': 27.5.1
       '@types/graceful-fs': 4.1.8
-      '@types/node': 18.19.59
+      '@types/node': 18.19.60
       anymatch: 3.1.3
       fb-watchman: 2.0.2
       graceful-fs: 4.2.11
@@ -16036,7 +16036,7 @@ snapshots:
       '@jest/source-map': 27.5.1
       '@jest/test-result': 27.5.1
       '@jest/types': 27.5.1
-      '@types/node': 18.19.59
+      '@types/node': 18.19.60
       chalk: 4.1.2
       co: 4.6.0
       expect: 27.5.1
@@ -16091,7 +16091,7 @@ snapshots:
   jest-mock@27.5.1:
     dependencies:
       '@jest/types': 27.5.1
-      '@types/node': 18.19.59
+      '@types/node': 18.19.60
 
   jest-pnp-resolver@1.2.3(jest-resolve@27.5.1):
     optionalDependencies:
@@ -16129,7 +16129,7 @@ snapshots:
       '@jest/test-result': 27.5.1
       '@jest/transform': 27.5.1
       '@jest/types': 27.5.1
-      '@types/node': 18.19.59
+      '@types/node': 18.19.60
       chalk: 4.1.2
       emittery: 0.8.1
       graceful-fs: 4.2.11
@@ -16180,7 +16180,7 @@ snapshots:
 
   jest-serializer@27.5.1:
     dependencies:
-      '@types/node': 18.19.59
+      '@types/node': 18.19.60
       graceful-fs: 4.2.11
 
   jest-snapshot@27.5.1:
@@ -16213,7 +16213,7 @@ snapshots:
   jest-util@27.5.1:
     dependencies:
       '@jest/types': 27.5.1
-      '@types/node': 18.19.59
+      '@types/node': 18.19.60
       chalk: 4.1.2
       ci-info: 3.9.0
       graceful-fs: 4.2.11
@@ -16222,7 +16222,7 @@ snapshots:
   jest-util@28.1.3:
     dependencies:
       '@jest/types': 28.1.3
-      '@types/node': 18.19.59
+      '@types/node': 18.19.60
       chalk: 4.1.2
       ci-info: 3.9.0
       graceful-fs: 4.2.11
@@ -16252,7 +16252,7 @@ snapshots:
     dependencies:
       '@jest/test-result': 27.5.1
       '@jest/types': 27.5.1
-      '@types/node': 18.19.59
+      '@types/node': 18.19.60
       ansi-escapes: 4.3.2
       chalk: 4.1.2
       jest-util: 27.5.1
@@ -16262,7 +16262,7 @@ snapshots:
     dependencies:
       '@jest/test-result': 28.1.3
       '@jest/types': 28.1.3
-      '@types/node': 18.19.59
+      '@types/node': 18.19.60
       ansi-escapes: 4.3.2
       chalk: 4.1.2
       emittery: 0.10.2
@@ -16271,19 +16271,19 @@ snapshots:
 
   jest-worker@26.6.2:
     dependencies:
-      '@types/node': 18.19.59
+      '@types/node': 18.19.60
       merge-stream: 2.0.0
       supports-color: 7.2.0
 
   jest-worker@27.5.1:
     dependencies:
-      '@types/node': 18.19.59
+      '@types/node': 18.19.60
       merge-stream: 2.0.0
       supports-color: 8.1.1
 
   jest-worker@28.1.3:
     dependencies:
-      '@types/node': 18.19.59
+      '@types/node': 18.19.60
       merge-stream: 2.0.0
       supports-color: 8.1.1
 
@@ -16584,7 +16584,7 @@ snapshots:
     dependencies:
       react: 18.3.1
 
-  lucide-react@0.453.0(react@18.3.1):
+  lucide-react@0.454.0(react@18.3.1):
     dependencies:
       react: 18.3.1
 
@@ -17048,7 +17048,7 @@ snapshots:
   muse-ui@4.0.0-alpha.5(@babel/core@7.23.2)(@emotion/is-prop-valid@1.2.2)(@opentelemetry/api@1.9.0)(@types/react-dom@18.3.1)(@types/react@18.3.12)(embla-carousel@8.0.0-rc15)(esbuild@0.17.19):
     dependencies:
       '@faker-js/faker': 8.4.1
-      '@hookform/resolvers': 3.9.0(react-hook-form@7.53.1(react@18.3.1))
+      '@hookform/resolvers': 3.9.1(react-hook-form@7.53.1(react@18.3.1))
       '@radix-ui/react-accessible-icon': 1.0.3(@types/react-dom@18.3.1)(@types/react@18.3.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@radix-ui/react-accordion': 1.1.2(@types/react-dom@18.3.1)(@types/react@18.3.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@radix-ui/react-alert-dialog': 1.0.5(@types/react-dom@18.3.1)(@types/react@18.3.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -18036,7 +18036,7 @@ snapshots:
       '@protobufjs/path': 1.1.2
       '@protobufjs/pool': 1.1.0
       '@protobufjs/utf8': 1.1.0
-      '@types/node': 18.19.59
+      '@types/node': 18.19.60
       long: 5.2.3
 
   proxy-addr@2.0.7:
