@@ -76,7 +76,7 @@ export default function StoreCard({
           <Link
             className="mt-2"
             target="_blank"
-            href="https://apps.apple.com/us/app/id6448848303?mt=12"
+            href="https://apps.apple.com/us/app/id6446263696?mt=12"
           >
             <img
               width="220"

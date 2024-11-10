@@ -23,7 +23,7 @@ export default function PkgCard({
           </span>
           <div className="mb-2 mt-2 flex flex-col px-2">
             <CopyBlock
-              text="brew install fafarunner/fafarunner/fafarunner"
+              text="brew install kjxbyz/casks/fafarunner"
               language="bash"
               theme={{ mode: theme as any }}
               showLineNumbers
@@ -71,7 +71,7 @@ export default function PkgCard({
           <span className="mt-6 text-gray-600 dark:text-white/80">Scoop</span>
           <div className="mb-2 mt-2 flex flex-col px-2">
             <CopyBlock
-              text={`scoop bucket add scoop-bucket https://github.com/fafarunner/scoop-bucket\nscoop install scoop-bucket/fafarunner`}
+              text={`scoop bucket add kjxbyz_scoop-bucket https://github.com/kjxbyz/scoop-bucket\nscoop install kjxbyz_scoop-bucket/fafarunner`}
               language="bash"
               theme={{ mode: theme as any }}
               showLineNumbers
@@ -102,27 +102,27 @@ export default function PkgCard({
               codeBlock
             />
           </div>
+          {/*<span className="mt-6 text-gray-600 dark:text-white/80">*/}
+          {/*  Nixpkgs (TODO)*/}
+          {/*</span>*/}
+          {/*<div className="mb-2 mt-2 flex flex-col px-2">*/}
+          {/*  <CopyBlock*/}
+          {/*    text="nix-shell -p fafarunner"*/}
+          {/*    language="bash"*/}
+          {/*    theme={{ mode: theme as any }}*/}
+          {/*    showLineNumbers*/}
+          {/*    codeBlock*/}
+          {/*  />*/}
+          {/*</div>*/}
           <span className="mt-6 text-gray-600 dark:text-white/80">
-            Nixpkgs (TODO)
-          </span>
-          <div className="mb-2 mt-2 flex flex-col px-2">
-            <CopyBlock
-              text="nix-shell -p fafarunner"
-              language="bash"
-              theme={{ mode: theme as any }}
-              showLineNumbers
-              codeBlock
-            />
-          </div>
-          <span className="mt-6 text-gray-600 dark:text-white/80">
-            Arch/Manjaro (TODO)
+            Arch/Manjaro
           </span>
           <div className="mb-2 mt-2 flex flex-col px-2">
             <span className="mb-2 text-gray-600 dark:text-white/80">
               With pamac
             </span>
             <CopyBlock
-              text="sudo pamac install fafarunner"
+              text="sudo pamac install fafarunner-bin"
               language="bash"
               theme={{ mode: theme as any }}
               showLineNumbers
@@ -132,7 +132,7 @@ export default function PkgCard({
               With yay
             </span>
             <CopyBlock
-              text="yay -Sy fafarunner"
+              text="yay -Sy fafarunner-bin"
               language="bash"
               theme={{ mode: theme as any }}
               showLineNumbers
