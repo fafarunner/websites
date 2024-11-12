@@ -85,7 +85,7 @@ export default function PkgCard({
           <span className="mt-4 text-gray-600 dark:text-white/80">Flatpak</span>
           <div className="mb-2 mt-2 flex flex-col px-2">
             <CopyBlock
-              text="flatpak install com.chenyifaer.FaFaRunner"
+              text="flatpak install com.fafarunner.FaFaRunner"
               language="bash"
               theme={{ mode: theme as any }}
               showLineNumbers

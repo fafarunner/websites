@@ -119,7 +119,7 @@ export default function StoreCard({
           <div className="mb-2 mt-2 flex flex-col px-2">
             <Link
               target="_blank"
-              href="https://flathub.org/apps/details/com.chenyifaer.FaFaRunner"
+              href="https://flathub.org/apps/details/com.fafarunner.FaFaRunner"
             >
               <img
                 width="220"
