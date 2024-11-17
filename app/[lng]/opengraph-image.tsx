@@ -28,8 +28,8 @@ export default async function OG() {
       >
         <img
           src={`${basePath}/logo.jpg`}
-          alt="FaFa Runner Logo"
-          tw="w-20 h-20 mb-4 opacity-95"
+          alt={alt}
+          tw="w-20 h-20 mb-4 opacity-95 rounded-full"
         />
         <h1
           style={{
@@ -43,7 +43,7 @@ export default async function OG() {
             letterSpacing: "-0.02em",
           }}
         >
-          FaFa Runner
+          {alt}
         </h1>
       </div>
     ),
