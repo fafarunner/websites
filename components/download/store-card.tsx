@@ -22,7 +22,7 @@ export default function StoreCard({
             <img
               width="220"
               alt="Get it on App Store"
-              src="https://raw.githubusercontent.com/fafarunner/fafarunner/main/docs/assets/Download-on-the-App-Store.svg"
+              src="/images/Download-on-the-App-Store.svg"
             />
           </Link>
         </>
@@ -40,7 +40,7 @@ export default function StoreCard({
               <img
                 width="220"
                 alt="Get it on Google Play"
-                src="https://raw.githubusercontent.com/fafarunner/fafarunner/main/docs/assets/Download-on-the-Google-Play.png"
+                src="/images/Download-on-the-Google-Play.png"
               />
             </Link>
           </div>
@@ -55,7 +55,7 @@ export default function StoreCard({
               <img
                 width="220"
                 alt="Get it on App Store"
-                src="https://raw.githubusercontent.com/fafarunner/fafarunner/main/docs/assets/Download-on-the-F-Droid.svg"
+                src="/images/Download-on-the-F-Droid.svg"
               />
             </Link>
           </div> */}
@@ -65,7 +65,7 @@ export default function StoreCard({
               <img
                 width="220"
                 alt="Get it on Amazon App Store"
-                src="https://raw.githubusercontent.com/fafarunner/fafarunner/main/docs/assets/Download-on-the-Amazon-App-Store.png"
+                src="/images/Download-on-the-Amazon-App-Store.png"
               />
             </Link>
           </div>
@@ -81,7 +81,7 @@ export default function StoreCard({
             <img
               width="220"
               alt="Get it on Mac App Store"
-              src="https://raw.githubusercontent.com/fafarunner/fafarunner/main/docs/assets/Download-on-the-Mac-App-Store.svg"
+              src="/images/Download-on-the-Mac-App-Store.svg"
             />
           </Link>
         </>
@@ -111,7 +111,7 @@ export default function StoreCard({
               <img
                 width="220"
                 alt="Get it on Snap Store"
-                src="https://raw.githubusercontent.com/fafarunner/fafarunner/main/docs/assets/Download-on-the-Snap-Store.svg"
+                src="/images/Download-on-the-Snap-Store.svg"
               />
             </Link>
           </div>
