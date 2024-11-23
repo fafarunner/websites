@@ -1,4 +1,4 @@
-import { SystemExtensions, SystemOSKeys } from "@/types/common";
+import { SystemExtensions, SystemOSKeys, SystemOSName } from "@/types/common";
 
 export const cacheLngKey: string = "__fafa_runner_lng__";
 export const cacheThemeKey: string = "__fafa_runner_theme__";
@@ -9,6 +9,14 @@ export const domain =
   process.env.NODE_ENV === "production"
     ? `https://fafarunner.com${basePath}`
     : `http://localhost:3000${basePath}`;
+
+export const platformNames: SystemOSName = {
+  android: "Android",
+  ios: "iOS",
+  macos: "macOS",
+  windows: "Windows",
+  linux: "Linux",
+};
 
 export const platforms: SystemOSKeys[] = [
   "ios",
