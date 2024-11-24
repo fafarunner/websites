@@ -139,10 +139,12 @@ export default function Home({
         <div className="mb-8 flex items-center justify-center space-x-20">
           <Image
             className="rounded-full"
-            alt="logo"
+            alt="FaFa Runner Logo"
             src={`${basePath}/logo.jpg`}
             width={160}
             height={160}
+            loading="lazy"
+            decoding="async"
           />
         </div>
         <h1
