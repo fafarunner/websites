@@ -1,4 +1,5 @@
 import React, { useMemo } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "@/i18n/client";
 import type { LngProps } from "@/types/i18next-lng";
@@ -19,8 +20,9 @@ export default function StoreCard({
             target="_blank"
             href="https://apps.apple.com/us/app/id6446263696"
           >
-            <img
+            <Image
               width="220"
+              height="74"
               alt="Get it on App Store"
               src="/images/Download-on-the-App-Store.svg"
             />
@@ -37,33 +39,20 @@ export default function StoreCard({
               target="_blank"
               href="https://play.google.com/store/apps/details?id=com.chenyifaer.fafarunner"
             >
-              <img
+              <Image
                 width="220"
+                height="65"
                 alt="Get it on Google Play"
                 src="/images/Download-on-the-Google-Play.png"
               />
             </Link>
           </div>
-          {/* <span className="mt-4 text-gray-600 dark:text-white/80">
-            F-Droid (TODO)
-          </span>
-          <div className="mb-2 mt-2 flex flex-col px-2">
-            <Link
-              target="_blank"
-              href="https://f-droid.org/packages/com.chenyifaer.fafarunner"
-            >
-              <img
-                width="220"
-                alt="Get it on App Store"
-                src="/images/Download-on-the-F-Droid.svg"
-              />
-            </Link>
-          </div> */}
           <span className="mt-4 text-gray-600 dark:text-white/80">Amazon</span>
           <div className="mb-2 mt-2 flex flex-col px-2">
             <Link target="_blank" href="https://www.amazon.com/dp/B0DHZ8N2BJ">
-              <img
+              <Image
                 width="220"
+                height="64"
                 alt="Get it on Amazon App Store"
                 src="/images/Download-on-the-Amazon-App-Store.png"
               />
@@ -78,8 +67,9 @@ export default function StoreCard({
             target="_blank"
             href="https://apps.apple.com/us/app/id6446263696?mt=12"
           >
-            <img
+            <Image
               width="220"
+              height="56"
               alt="Get it on Mac App Store"
               src="/images/Download-on-the-Mac-App-Store.svg"
             />
@@ -93,8 +83,9 @@ export default function StoreCard({
             target="_blank"
             href="https://apps.microsoft.com/detail/9PDN5V0ZMF20?mode=full"
           >
-            <img
+            <Image
               width="220"
+              height="64"
               alt="Get it on Windows Store"
               src="https://get.microsoft.com/images/en-us%20dark.svg"
             />
@@ -108,8 +99,9 @@ export default function StoreCard({
           </span>
           <div className="mb-2 mt-2 flex flex-col px-2">
             <Link target="_blank" href="https://snapcraft.io/fafarunner">
-              <img
+              <Image
                 width="220"
+                height="68"
                 alt="Get it on Snap Store"
                 src="/images/Download-on-the-Snap-Store.svg"
               />
@@ -121,8 +113,9 @@ export default function StoreCard({
               target="_blank"
               href="https://flathub.org/apps/details/com.fafarunner.FaFaRunner"
             >
-              <img
+              <Image
                 width="220"
+                height="74"
                 alt="Get it on Flathub"
                 src="https://flathub.org/assets/badges/flathub-badge-en.png"
               />

@@ -60,7 +60,7 @@ export default function Home({
         {children}
       </div>
     ),
-    [],
+    [], // eslint-disable-line react-hooks/exhaustive-deps
   );
 
   const DynamicSection = useCallback(
@@ -89,7 +89,7 @@ export default function Home({
         </SectionTip>
       );
     },
-    [],
+    [], // eslint-disable-line react-hooks/exhaustive-deps
   );
 
   const features = [

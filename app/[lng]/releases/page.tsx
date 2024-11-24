@@ -41,7 +41,7 @@ export default function Releases({
 
   useEffect(() => {
     fetchData(page);
-    /* eslint-disable-next-line react-hooks/exhaustive-deps */
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [page]);
 
   const ShowContent = useCallback(
@@ -52,7 +52,7 @@ export default function Releases({
       isShow: boolean;
       children: React.ReactElement;
     }) => (isShow ? children : null),
-    [],
+    [], // eslint-disable-line react-hooks/exhaustive-deps
   );
 
   return (
