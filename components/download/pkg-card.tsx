@@ -30,18 +30,6 @@ export default function PkgCard({
               codeBlock
             />
           </div>
-          <span className="mt-6 text-gray-600 dark:text-white/80">
-            Nixpkgs (TODO)
-          </span>
-          <div className="mb-2 mt-2 flex flex-col px-2">
-            <CopyBlock
-              text="nix-shell -p fafarunner"
-              language="bash"
-              theme={{ mode: theme as any }}
-              showLineNumbers
-              codeBlock
-            />
-          </div>
         </>
       ),
       windows: (
@@ -102,27 +90,15 @@ export default function PkgCard({
               codeBlock
             />
           </div>
-          {/*<span className="mt-6 text-gray-600 dark:text-white/80">*/}
-          {/*  Nixpkgs (TODO)*/}
-          {/*</span>*/}
-          {/*<div className="mb-2 mt-2 flex flex-col px-2">*/}
-          {/*  <CopyBlock*/}
-          {/*    text="nix-shell -p fafarunner"*/}
-          {/*    language="bash"*/}
-          {/*    theme={{ mode: theme as any }}*/}
-          {/*    showLineNumbers*/}
-          {/*    codeBlock*/}
-          {/*  />*/}
-          {/*</div>*/}
           <span className="mt-6 text-gray-600 dark:text-white/80">
             Arch/Manjaro
           </span>
           <div className="mb-2 mt-2 flex flex-col px-2">
             <span className="mb-2 text-gray-600 dark:text-white/80">
-              With pamac
+              With pacman
             </span>
             <CopyBlock
-              text="sudo pamac install fafarunner-bin"
+              text="sudo pacman install fafarunner-bin"
               language="bash"
               theme={{ mode: theme as any }}
               showLineNumbers
