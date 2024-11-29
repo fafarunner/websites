@@ -4,6 +4,8 @@ import Link from "next/link";
 import { useTranslation } from "@/i18n/client";
 import type { LngProps } from "@/types/i18next-lng";
 
+const VERCEL_GIT_COMMIT_SHA = process.env.VERCEL_GIT_COMMIT_SHA;
+
 export default function Footer(props: LngProps) {
   const { t } = useTranslation(props.lng, "footer");
   const { t: th } = useTranslation(props.lng, "header");
@@ -12,7 +14,7 @@ export default function Footer(props: LngProps) {
   return (
     <div className="w-full border-b border-gray-200 py-5 text-center dark:border-gray-700">
       <p className="text-gray-500 dark:text-white/80">
-        {t("footer")}{" "}
+        {t("footer")}&nbsp;
         <a
           className="font-medium text-gray-800 underline transition-colors dark:text-white/90"
           href="https://github.com/fafarunner/websites"
@@ -30,7 +32,7 @@ export default function Footer(props: LngProps) {
         >
           {t("privacy")}
         </Link>
-        &nbsp;&nbsp;
+        &nbsp;
         <Link
           className="font-medium text-gray-800 underline transition-colors dark:text-white/90"
           href={`/${props.lng}/legal/terms-of-use`}
@@ -40,24 +42,14 @@ export default function Footer(props: LngProps) {
         </Link>
       </p>
       <span className="mt-2 flex flex-wrap items-center justify-center text-sm text-gray-500 dark:text-gray-400 sm:text-center">
-        © {`2023${fullYear === 2023 ? "" : `-${fullYear}`}`}&nbsp;
+        &copy;&nbsp;{`2023${fullYear === 2023 ? "" : `-${fullYear}`}`}&nbsp;
         <a href="https://www.fafarunner.com" className="hover:underline">
           {th("title")}
         </a>
-        . {t("copyright")}&nbsp;
-        {process.env.VERCEL_GIT_COMMIT_SHA && (
-          <p className="flex items-center justify-center">
-            <a
-              href={`https://github.com/fafarunner/websites/commit/${process.env.VERCEL_GIT_COMMIT_SHA}`}
-              target="_blank"
-              className="hover:underline"
-              rel="noreferrer"
-            >
-              {process.env.VERCEL_GIT_COMMIT_SHA.substring(0, 8)}
-            </a>
-          </p>
+        .&nbsp;{t("copyright")}&nbsp;
+        {VERCEL_GIT_COMMIT_SHA && (
+          <>{VERCEL_GIT_COMMIT_SHA.substring(0, 8)}&nbsp;</>
         )}
-        &nbsp;
         <Image
           src="https://visitor-badge.laobi.icu/badge?page_id=fafa-runner.chenyifaer.com"
           width={60}
