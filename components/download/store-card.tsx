@@ -64,6 +64,22 @@ export default function StoreCard({
               />
             </Link>
           </div>
+          <span className="mt-4 text-gray-600 dark:text-white/80">F-Droid</span>
+          <div className="mb-2 mt-2 flex flex-col px-2">
+            <Link
+              target="_blank"
+              href="https://f-droid.org/packages/com.chenyifaer.fafarunner"
+            >
+              <Image
+                width="220"
+                height="64"
+                alt="Get it on F-Droid"
+                src="/images/Download-on-the-F-Droid.svg"
+                loading="lazy"
+                decoding="async"
+              />
+            </Link>
+          </div>
         </>
       ),
       macos: (
