@@ -33,25 +33,25 @@ export default function StoreCard({
       ),
       android: (
         <>
-          <span className="mt-2 text-gray-600 dark:text-white/80">
-            Google Play
-          </span>
-          <div className="mb-2 mt-2 flex flex-col px-2">
-            <Link
-              target="_blank"
-              href="https://play.google.com/store/apps/details?id=com.chenyifaer.fafarunner"
-            >
-              <Image
-                width="220"
-                height="65"
-                alt="Get it on Google Play"
-                src="/images/Download-on-the-Google-Play.png"
-                loading="lazy"
-                decoding="async"
-              />
-            </Link>
-          </div>
-          <span className="mt-4 text-gray-600 dark:text-white/80">Amazon</span>
+          {/*<span className="mt-2 text-gray-600 dark:text-white/80">*/}
+          {/*  Google Play*/}
+          {/*</span>*/}
+          {/*<div className="mb-2 mt-2 flex flex-col px-2">*/}
+          {/*  <Link*/}
+          {/*    target="_blank"*/}
+          {/*    href="https://play.google.com/store/apps/details?id=com.chenyifaer.fafarunner"*/}
+          {/*  >*/}
+          {/*    <Image*/}
+          {/*      width="220"*/}
+          {/*      height="65"*/}
+          {/*      alt="Get it on Google Play"*/}
+          {/*      src="/images/Download-on-the-Google-Play.png"*/}
+          {/*      loading="lazy"*/}
+          {/*      decoding="async"*/}
+          {/*    />*/}
+          {/*  </Link>*/}
+          {/*</div>*/}
+          <span className="mt-2 text-gray-600 dark:text-white/80">Amazon</span>
           <div className="mb-2 mt-2 flex flex-col px-2">
             <Link target="_blank" href="https://www.amazon.com/dp/B0DHZ8N2BJ">
               <Image
@@ -82,24 +82,7 @@ export default function StoreCard({
           </div>
         </>
       ),
-      macos: (
-        <>
-          <Link
-            className="mt-2"
-            target="_blank"
-            href="https://apps.apple.com/us/app/id6446263696?mt=12"
-          >
-            <Image
-              width="220"
-              height="56"
-              alt="Get it on Mac App Store"
-              src="/images/Download-on-the-Mac-App-Store.svg"
-              loading="lazy"
-              decoding="async"
-            />
-          </Link>
-        </>
-      ),
+      macos: null,
       windows: (
         <>
           <Link
